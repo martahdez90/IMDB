@@ -17,7 +17,7 @@ export class Imdb {
     }
     obtenerInstanciaIMDB(nombreFichero: string): Imdb {
         let lectura: string = fs.readFileSync(nombreFichero, 'utf8');
-        let final: Imdb = new Imdb (JSON.parse(lectura));
+        let final: Imdb = new Imdb(JSON.parse(lectura));
         return final;
     }
 }
