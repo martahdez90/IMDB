@@ -8,8 +8,6 @@ export class Imdb{
     constructor(arrayMovie:Movie[]){
         this.peliculas=arrayMovie
     }
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> r1
+

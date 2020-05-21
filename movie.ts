@@ -21,8 +21,8 @@ export class Movie{
     this.genre=genre  
     }
     //Creo el metodo mostrar datos de las peliculas
-    public mostrarDatosPeliculas(){
-        console.log(`Titulo: ${this.title} \nAño de lanzamiento: ${this.releaseYear}\nNacionalidad: ${this.nacionality}\nGenero: ${this.genre}\n`)
+    public printPeliculas(){
+        console.log(`{"Titulo": "${this.title}", \n "Año de lanzamiento": "${this.releaseYear}",\n "Nacionalidad": "${this.nacionality}", \n "Genero": "${this.genre}" \n}`)
     }
 }
 
