@@ -17,5 +17,3 @@ var Movie = /** @class */ (function () {
     return Movie;
 }());
 exports.Movie = Movie;
-var seven = new Movie("Seven", 1995, "EE.UU", "Crime");
-seven.mostrarDatosPeliculas();

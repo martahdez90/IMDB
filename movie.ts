@@ -25,6 +25,5 @@ export class Movie{
         console.log(`Titulo: ${this.title} \nAño de lanzamiento: ${this.releaseYear}\nNacionalidad: ${this.nacionality}\nGenero: ${this.genre}\n`)
     }
 }
-let seven:Movie= new Movie("Seven", 1995, "EE.UU", "Crime")
-seven.mostrarDatosPeliculas()
+
 
