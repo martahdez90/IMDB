@@ -10,7 +10,7 @@ export class Movie {
     public writer: Professional
     public language: string
     public plataform: string
-    public isMCU: boolean
+    public isMCU: string
     public mainCharacterName: string
     public producer: string
     public distributor: string
