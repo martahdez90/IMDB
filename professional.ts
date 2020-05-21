@@ -27,5 +27,8 @@ class Professional {
         this.oscarsNumber = oscarsNumber;
         this.profession = profession;
     }
-
+    //Método propio imprimir valor atributos
+    public print() {
+        console.log(`Name: ${this.name} \n Age: ${this.genre} \n Weight: ${this.genre} \n Height: ${this.weight} \n Color of the hair: ${this.hairColor} \n Color of the eyes: ${this.eyeColor} \n Race: ${this.race} \n Is retired?: ${this.isRetired} \n Nationality: ${this.nationality} \n Number of Oscars: ${this.oscarsNumber} \n Profession: ${this.profession} \n`)
+    }
 }
