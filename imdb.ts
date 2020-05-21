@@ -3,11 +3,11 @@
 // importo la clase Movie
 import { Movie } from "./movie"
 const fs = require('fs')
-export class Imdb{
-    public peliculas:Movie[]
+export class Imdb {
+    public peliculas: Movie[]
     //creo el constructor
-    constructor(arrayMovie:Movie[]){
-        this.peliculas=arrayMovie
+    constructor(arrayMovie: Movie[]) {
+        this.peliculas = arrayMovie
     }
     crearJson() {
         let result = ""
@@ -15,6 +15,17 @@ export class Imdb{
             result += this.peliculas[i].printPeliculas() + "\n";
         }
         return fs.writeFileSync("imdbBBDD.json", result);
+    }
+    readJson() {
+        let salida: string = fs.readFileSync("imdbBBDD.json")
+        return salida.toString();
+    }
+    escribirEnFicheroJSON(nombreFichero: string) {
+        return fs.copyFileSync(nombreFichero, "BBDDpeliculas.json");
+    }
+    obtenerInstanciaIMDB(nombreFichero: string): Imdb {
+        let lectura: Imdb = fs.readFileSync(nombreFichero).toString()
+        return lectura;
     }
 }
 
