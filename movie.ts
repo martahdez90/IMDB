@@ -22,7 +22,7 @@ export class Movie{
     }
     //Creo el metodo mostrar datos de las peliculas
     public printPeliculas(){
-        console.log(`{"Titulo": "${this.title}", \n "Año de lanzamiento": "${this.releaseYear}",\n "Nacionalidad": "${this.nacionality}", \n "Genero": "${this.genre}" \n}`)
+        return (`{"Titulo": "${this.title}", \n "Año de lanzamiento": "${this.releaseYear}",\n "Nacionalidad": "${this.nacionality}", \n "Genero": "${this.genre}" \n}`)
     }
 }
 
