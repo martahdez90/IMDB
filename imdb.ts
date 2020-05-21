@@ -16,8 +16,9 @@ export class Imdb {
         return fs.writeFileSync(nombreFichero, result);
     }
     obtenerInstanciaIMDB(nombreFichero: string): Imdb {
-        let lectura: object = fs.readFileSync(nombreFichero).toString()// que lo devolviera en string // convertirlo a objecto Imdb
-        return lectura;
+        let lectura: string = fs.readFileSync(nombreFichero, 'utf8');
+        let final: Imdb = new Imdb (JSON.parse(lectura));
+        return final;
     }
 }
 
