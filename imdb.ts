@@ -2,6 +2,7 @@
 •	Con un único atributo publico denominado películas que es un array de objetos de la clase Movie */
 // importo la clase Movie
 import { Movie } from "./movie"
+
 const fs = require('fs')
 export class Imdb {
     public peliculas: Movie[]
@@ -9,22 +10,13 @@ export class Imdb {
     constructor(arrayMovie: Movie[]) {
         this.peliculas = arrayMovie
     }
-    crearJson() {
-        let result = ""
-        for (let i = 0; i < this.peliculas.length; i++) {
-            result += this.peliculas[i].printPeliculas() + "\n";
-        }
-        return fs.writeFileSync("imdbBBDD.json", result);
-    }
-    readJson() {
-        let salida: string = fs.readFileSync("imdbBBDD.json")
-        return salida.toString();
-    }
     escribirEnFicheroJSON(nombreFichero: string) {
-        return fs.copyFileSync(nombreFichero, "BBDDpeliculas.json");
+        let result = ""
+        result = JSON.stringify(this.peliculas)
+        return fs.writeFileSync(nombreFichero, result);
     }
     obtenerInstanciaIMDB(nombreFichero: string): Imdb {
-        let lectura: Imdb = fs.readFileSync(nombreFichero).toString()
+        let lectura: object = fs.readFileSync(nombreFichero).toString()// que lo devolviera en string // convertirlo a objecto Imdb
         return lectura;
     }
 }

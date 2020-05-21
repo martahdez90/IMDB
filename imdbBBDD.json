@@ -1,14 +1,4 @@
-{"Titulo": "Seven", 
- "Año de lanzamiento": "1995",
- "Nacionalidad": "EE.UU", 
- "Genero": "Crime" 
-}
-{"Titulo": "EL silencio de los corderos", 
- "Año de lanzamiento": "1991",
- "Nacionalidad": "EE.UU", 
- "Genero": "Thriler" 
-}
-{"Titulo": "Matilda", 
+[{"title":"Seven","releaseYear":2008,"nacionality":"EE.UU","genre":"Crime"},{"title":"EL silencio de los corderos","releaseYear":1991,"nacionality":"EE.UU","genre":"Thriler"}]{"Titulo": "Matilda", 
  "Año de lanzamiento": "1998",
  "Nacionalidad": "EE.UU", 
  "Genero": "Infantil" 
