@@ -64,7 +64,7 @@ if (completar === "si" || completar === "Si") {
     isRetired = readlineSync.question('Retirado: ');
     nationalityP = readlineSync.question('Nacionalidad: ');
     oscarsNumber = readlineSync.question('Numero de Oscars ganado: ');
-    profession = readlineSync.question('Profesion: ')   
+    profession = readlineSync.question('Profesion: ')
 
     let actorB: Professional = new Professional(nombre, age, genreP, weight, height, hairColor, eyeColor, race, isRetired, nationality, oscarsNumber, profession)
 
